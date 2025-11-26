@@ -80,7 +80,7 @@
 }
 
 .textContainer h2 span {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -96,10 +96,14 @@
 
 .skillHeading {
   display: block;
-  padding-block-start: 400px;
+  padding-block-start: 30vh;
   @media (768px > width) {
     padding-block-start: 20px;
   }
+}
+.buttom{
+  position: relative;
+  bottom: 10%;
 }
 
 .skillContainer {
