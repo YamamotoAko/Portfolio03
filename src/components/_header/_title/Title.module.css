@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  margin-bottom: 240px;
+  user-select: none;
+}
+
+.gooey {
+  filter: url("#gooey");
+}
+
+.char {
+  display: inline-block;
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+  margin: 0 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 15px;
+}
+
+
+.gooeyFilter {
+  width: 0;
+  height: 0;
+}

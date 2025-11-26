@@ -1,0 +1,83 @@
+.overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: azure;
+}
+
+.close {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.box {
+  position: relative;
+  width: 80vw;
+  /* max-width: 1000px; */
+  height: 80vh;
+  padding-inline: 16px;
+  margin-inline: auto;
+  margin-block-start: 32px;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+
+  overflow: hidden;
+}
+
+.imgContainer {
+  flex: 3;
+  overflow-y: auto;
+}
+
+.imgbox {
+  aspect-ratio: 519 / 369.68;
+  margin-bottom: 30px;
+}
+
+.imgbox img {
+  width: 100%;
+  height: auto;
+}
+
+.textContainer {
+  flex: 2.5;
+  position: sticky;
+  top: 0;
+  height: fit-content;
+  z-index: 10;
+}
+
+.textContainer h2 {
+  font-size: 20px;
+  font-weight: 700;
+  padding-block-end: 15px;
+}
+
+.textContainer h2 span {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.textContainer p {
+  font-size: 14px;
+}
+
+.skillHeading {
+  display: block;
+  padding-block-start: 400px;
+}
+
+.skillContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.skillBox img {
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,10 @@
+.wraper{
+    display: grid;
+    gap: 44px;
+    grid-template-columns: 1fr 1fr;
+
+    @media(768px > width){
+        display: flex;
+        flex-direction: column;
+    }
+}

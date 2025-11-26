@@ -1,0 +1,12 @@
+.wrap{
+    width: 100%;
+    padding-inline: 16px;
+    padding-block-start: 88px;
+    display: flex;
+
+        @media(768px > width){
+        display: flex;
+        flex-direction: column;
+    }
+
+}

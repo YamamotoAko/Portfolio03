@@ -1,0 +1,33 @@
+.menu{
+    padding-inline-start: 16px;
+    padding-block-end: 44px;
+    width: 253px;
+    display: flex;
+    flex-direction: column;
+    gap: 97px;
+
+
+            @media(768px > width){
+                width: 100%;
+                flex-direction: row;
+    }
+
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (768px > width) {
+    display: flex;        
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  li {
+    display: inline-block;
+    font-size: 16px;
+    list-style: none;
+    width: auto;
+  }
+}}

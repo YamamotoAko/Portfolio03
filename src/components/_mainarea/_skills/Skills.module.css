@@ -1,0 +1,46 @@
+.wraper {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* coding と design の間隔 */
+
+  .coding {
+    display: flex;
+    max-width: 995px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-inline: auto;
+  }
+  .design {
+    display: flex;
+    max-width: 995px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-inline: auto;
+  }
+
+  .heading {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  p {
+    max-width: 429px;
+  }
+}
+.skillbox {
+  max-width: 176px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  .skillImg {
+    width: 32px;
+    height: 32px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
