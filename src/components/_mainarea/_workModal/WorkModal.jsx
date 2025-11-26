@@ -1,4 +1,5 @@
 import styles from './WorkModal.module.css';
+import visit from './../../../assets/images/visit.png';
 
 export default function WorkModal({ item, setIsOpen }) {
   return (
@@ -32,11 +33,15 @@ export default function WorkModal({ item, setIsOpen }) {
                 </div>
               ))}
             </div>
-            <p>
+
+            <div className={styles.visit}>
               <a href={item.url} target="_blank">
-                サイトを見る
+                <div>
+                  <img src={visit} alt="visit" />
+                </div>
+                <p>サイトを見る</p>
               </a>
-            </p>
+            </div>
           </div>
         </div>
       </div>

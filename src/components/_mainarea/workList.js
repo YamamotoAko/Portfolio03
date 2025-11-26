@@ -4,9 +4,7 @@ import scss from '../../assets/scss.png';
 import js from '../../assets/js.png';
 import react from '../../assets/react.png';
 import vite from '../../assets/vite.png';
-import github from '../../assets/github.png';
 import figma from '../../assets/figma.png';
-import id01img from '../../assets/WorkImg.png';
 
 // 画像の呼び出し
 // tokyoblog
@@ -44,6 +42,9 @@ import reactvlog02 from './../../assets/images/reactvlog02.png';
 import reactvlog03 from './../../assets/images/reactvlog03.png';
 import reactvlog04 from './../../assets/images/reactvlog04.png';
 
+// portfolio
+import portfolio01 from './../../assets/images/portfolio01.png';
+
 const workList = [
   {
     id: '01',
@@ -54,6 +55,7 @@ const workList = [
     img: [tokyo01, tokyo02, tokyo03, tokyo04, tokyo05, tokyo06, tokyo07],
     skill: [html, css, scss, js],
     url: 'https://yamamotoako.github.io/obon_holiday/index.html',
+    href: 'blog',
   },
   {
     id: '02',
@@ -64,6 +66,7 @@ const workList = [
     img: [poke01, poke02, poke03],
     skill: [html, css, scss, js],
     url: 'https://yamamotoako.github.io/PokeApp/',
+    href: 'poke',
   },
   {
     id: '03',
@@ -88,6 +91,7 @@ const workList = [
     ],
     skill: [html, css, scss, js, figma],
     url: 'https://yamamotoako.github.io/2025_10_fictional_LP/',
+    href: 'lp',
   },
   {
     id: '04',
@@ -98,15 +102,17 @@ const workList = [
     img: [reactvlog01, reactvlog02, reactvlog03, reactvlog04],
     skill: [html, css, js, react, vite, figma],
     url: 'https://yamamotoako.github.io/reactBlogsite/',
+    href: 'reactblog',
   },
   {
     id: '05',
     name: 'Portfolio',
     subName: '(Webサイト、自主制作)',
     text: '転職活動のためのポートフォリオを制作しました。ひと目見ただけで情報がすぐに入ってくるように分かりやすさを重視しました。シンプルなデザインの中にも細部にこだわり、美しさを感じてもらえるよう心がけました。',
-    firstImg: id01img,
-    img: [id01img, id01img],
+    firstImg: portfolio01,
+    img: [portfolio01],
     skill: [html, css, js, react, vite, figma],
+    href: 'portfolio',
   },
 ];
 

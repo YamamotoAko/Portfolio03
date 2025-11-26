@@ -1,9 +1,9 @@
 import styles from './WorkWrap.module.css';
 
-export default function WorkWrap({ onClick, firstImg, name, subName }) {
+export default function WorkWrap({ onClick, firstImg, name, subName, id }) {
   return (
     <>
-      <div className={styles.wrap} onClick={onClick}>
+      <div className={styles.wrap} onClick={onClick} id={id}>
         <div className={styles.imgbox}>
           <img src={firstImg} alt={name} />
         </div>

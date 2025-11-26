@@ -6,7 +6,7 @@ export default function Sec02() {
   return (
     <>
       <section className={styles.secWrap}>
-        <Heading title="Profile" />
+        <Heading title="Profile" id="profile" />
         <Skills />
         <Profile />
       </section>

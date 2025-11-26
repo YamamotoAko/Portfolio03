@@ -4,7 +4,7 @@
   height: 100vh;
   top: 0;
   left: 0;
-  background-color: azure;
+  background-color: #efe6d980;
 }
 
 .close {
@@ -15,10 +15,10 @@
 
 .box {
   position: relative;
-  width: 80vw;
-  /* max-width: 1000px; */
-  height: 80vh;
-  padding-inline: 16px;
+  width: 90vw;
+  height: 90vh;
+  background-color: #afa199fa;
+  padding: 16px;
   margin-inline: auto;
   margin-block-start: 32px;
 
@@ -27,11 +27,28 @@
   gap: 100px;
 
   overflow: hidden;
+  @media (768px > width) {
+    flex-direction: column;
+    gap: 0;
+  }
+  /* @media (530px > width) {
+  } */
 }
 
 .imgContainer {
   flex: 3;
   overflow-y: auto;
+
+  scrollbar-width: none;
+
+  -ms-overflow-style: none;
+  @media (768px > width) {
+    order: 2;
+  }
+}
+
+.imgContainer::-webkit-scrollbar {
+  display: none;
 }
 
 .imgbox {
@@ -50,6 +67,10 @@
   top: 0;
   height: fit-content;
   z-index: 10;
+  @media (768px > width) {
+    flex: 1.5;
+    order: 1;
+  }
 }
 
 .textContainer h2 {
@@ -63,13 +84,22 @@
   font-weight: 400;
 }
 
+.visit a {
+  display: flex;
+  gap: 1px;
+}
+
 .textContainer p {
   font-size: 14px;
+  line-height: 1.6;
 }
 
 .skillHeading {
   display: block;
   padding-block-start: 400px;
+  @media (768px > width) {
+    padding-block-start: 20px;
+  }
 }
 
 .skillContainer {

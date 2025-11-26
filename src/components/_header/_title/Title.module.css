@@ -8,20 +8,29 @@
 }
 
 .gooey {
-  filter: url("#gooey");
+  filter: url('#gooey');
 }
 
 .char {
   display: inline-block;
   font-size: 100px;
-  font-weight: bold;
+  font-weight: 400;
   color: black;
+  font-family: 'Playfair Display', serif;
   margin: 0 8px;
   cursor: pointer;
   transition: all 0.3s ease;
   letter-spacing: 15px;
+  @media (768px > width) {
+    letter-spacing: 3px;
+    font-size: 80px;
+  }
+  @media (530px > width) {
+    letter-spacing: 1px;
+    font-size: 32px;
+    font-weight: 300;
+  }
 }
-
 
 .gooeyFilter {
   width: 0;

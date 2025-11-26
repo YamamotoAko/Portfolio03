@@ -22,6 +22,7 @@ export default function WorkWraper() {
           firstImg={item.firstImg}
           name={item.name}
           subName={item.subName}
+          id={item.href}
         />
       ))}
 
