@@ -1,10 +1,10 @@
-.wraper{
-    display: grid;
-    gap: 44px;
-    grid-template-columns: 1fr 1fr;
+.wraper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5vw;
 
-    @media(768px > width){
-        display: flex;
-        flex-direction: column;
-    }
+  @media (768px > width) {
+    display: flex;
+    flex-direction: column;
+  }
 }

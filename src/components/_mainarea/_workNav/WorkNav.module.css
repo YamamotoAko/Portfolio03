@@ -1,7 +1,6 @@
 .menu {
-  padding-inline-start: 16px;
+  padding-inline: 16px 127px;
   padding-block-end: 44px;
-  width: 253px;
   display: flex;
   flex-direction: column;
   gap: 97px;
@@ -9,6 +8,7 @@
   @media (768px > width) {
     width: 100%;
     flex-direction: row;
+    padding-inline: 16px;
   }
 
   .wrap {
@@ -27,6 +27,11 @@
       font-size: 16px;
       list-style: none;
       width: auto;
+      @media (768px > width) {
+      }
+      @media (530px > width) {
+        font-size: 14px;
+      }
     }
 
     /* aタグ（またはspan等）に適用 */

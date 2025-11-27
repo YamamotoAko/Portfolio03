@@ -1,4 +1,13 @@
 .wraper {
   display: flex;
+  gap: 5vw;
   padding-block-start: 88px;
+  /* max-width: 995px;
+  margin-inline: auto; */
+
+  @media (880px > width) {
+    flex-direction: column;
+  }
+  @media (530px > width) {
+  }
 }

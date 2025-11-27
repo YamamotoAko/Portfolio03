@@ -1,9 +1,12 @@
 import styles from './Profile.module.css';
+import profile from './../../../assets/images/profile.png';
 export default function Profile() {
   return (
     <>
       <div className={styles.wraper}>
-        <div className={styles.imgbox}>{/* <img src={} alt="" /> */}</div>
+        <div className={styles.imgbox}>
+          <img src={profile} alt="似顔絵イラスト" />
+        </div>
 
         <p>
           12歳で地域の吹奏楽団に入団し、フルートと出会いました。学生時代は演奏者として、高校卒業後はボランティア講師として活動し、長年音楽に携わってきました。

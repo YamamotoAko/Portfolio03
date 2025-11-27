@@ -11,6 +11,8 @@
   position: fixed;
   top: 0;
   right: 0;
+  color: #393c2a;
+  padding-inline-end: 16px;
 }
 
 .box {
@@ -77,6 +79,12 @@
   font-size: 20px;
   font-weight: 700;
   padding-block-end: 15px;
+  @media (900px > width) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media (530px > width) {
+  }
 }
 
 .textContainer h2 span {
