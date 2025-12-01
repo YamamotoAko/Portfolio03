@@ -15,16 +15,18 @@ export default function WorkWraper() {
 
   return (
     <div className={styles.wraper}>
-      {workList.map((item) => (
-        <WorkWrap
-          key={item.id}
-          onClick={() => openModal(item)}
-          firstImg={item.firstImg}
-          name={item.name}
-          subName={item.subName}
-          id={item.href}
-        />
-      ))}
+      {[...workList]
+        .sort((a, b) => b.id - a.id) // id を基準に逆順にソート
+        .map((item) => (
+          <WorkWrap
+            key={item.id}
+            onClick={() => openModal(item)}
+            firstImg={item.firstImg}
+            name={item.name}
+            subName={item.subName}
+            id={item.href}
+          />
+        ))}
 
       {isOpen && selectedItem && (
         <WorkModal item={selectedItem} setIsOpen={setIsOpen} />
