@@ -7,8 +7,10 @@ export default function Sec02() {
     <>
       <section className={styles.secWrap}>
         <Heading title="Profile" id="profile" />
-        <Profile />
-        <Skills />
+        <div className={styles.box}>
+          <Profile />
+          <Skills />
+        </div>
       </section>
     </>
   );

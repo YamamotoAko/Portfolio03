@@ -1,5 +1,21 @@
 .secWrap {
   width: 100%;
   padding-inline: 16px;
-  padding-block-start: 88px;
+  padding-block: 88px 44px;
+  gap: 5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+.box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: fit-content;
+  margin-inline: auto;
+
+  @media (880px > width) {
+    display: flex;
+    flex-direction: column;
+  }
 }

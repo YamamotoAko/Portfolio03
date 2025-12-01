@@ -1,15 +1,14 @@
 .wraper {
   padding-inline: 20px;
-  padding-block-start: 40px;
+  /* padding-block-start: 40px; */
   display: flex;
   flex-direction: column;
   gap: 40px; /* coding と design の間隔 */
 
   .coding {
     display: flex;
-    max-width: 995px;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 30px;
     margin-inline: auto;
 
@@ -19,11 +18,16 @@
     @media (530px > width) {
     }
   }
+  .box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
   .design {
     display: flex;
     max-width: 995px;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 30px;
     margin-inline: auto;
 
